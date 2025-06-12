@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viagens pelo Mundo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .intro {
+      text-align: center;
+    }
+
+    .destinos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .destino {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .destino img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .destino h3 {
+      padding: 15px;
+    }
+
+    .dicas {
+      background: #e0f7fa;
+      border-radius: 10px;
+      padding: 30px;
+    }
+
+    footer {
+      background: #004d40;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #b2dfdb;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#intro">Início</a>
+      <a href="#destinos">Destinos</a>
+      <a href="#dicas">Dicas</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <h1>Viagens pelo Mundo</h1>
+    <p>Explore os lugares mais incríveis do planeta</p>
+  </header>
+
+  <section id="intro" class="intro">
+    <h2>Bem-vindo(a) ao nosso site de viagens!</h2>
+    <p>Descubra paisagens deslumbrantes, culturas fascinantes e experiências inesquecíveis. Aqui você encontra inspiração para planejar sua próxima aventura!</p>
+  </section>
+
+  <section id="destinos">
+    <h2>Destinos em Destaque</h2>
+    <div class="destinos">
+      <div class="destino">
+        <img src="https://images.unsplash.com/photo-1549887534-1d894c63d3f3?auto=format&fit=crop&w=800&q=80" alt="Paris">
+        <h3>Paris, França</h3>
+      </div>
+      <div class="destino">
+        <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=800&q=80" alt="Kyoto">
+        <h3>Kyoto, Japão</h3>
+      </div>
+      <div class="destino">
+        <img src="https://images.unsplash.com/photo-1533025781801-643df4f00ba2?auto=format&fit=crop&w=800&q=80" alt="Rio de Janeiro">
+        <h3>Rio de Janeiro, Brasil</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="dicas" class="dicas">
+    <h2>Dicas de Viagem</h2>
+    <ul>
+      <li>📅 Planeje com antecedência e pesquise o clima do destino.</li>
+      <li>🧳 Leve apenas o essencial na bagagem.</li>
+      <li>🌐 Aprenda algumas palavras do idioma local.</li>
+      <li>💳 Tenha um seguro de viagem para emergências.</li>
+    </ul>
+  </section>
+
+  <footer id="contato">
+    <p>Entre em contato: contato@viagenspelomundo.com</p>
+    <p>Siga-nos: 
+      <a href="#">Instagram</a> | 
+      <a href="#">Facebook</a> | 
+      <a href="#">YouTube</a>
+    </p>
+    <p>&copy; 2025 Viagens pelo Mundo</p>
+  </footer>
+</body>
+</html>
